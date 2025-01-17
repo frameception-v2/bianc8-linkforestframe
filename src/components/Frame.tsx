@@ -118,6 +118,32 @@ export default function Frame(
     >
       <div className="w-[300px] mx-auto py-2 px-2">
         <h1 className="text-2xl font-bold text-center mb-4">{title}</h1>
+        
+        <div className="flex flex-col gap-2">
+          <PurpleButton
+            onClick={() => sdk.actions.openUrl("https://warpcast.com/bianc8")}
+          >
+            Farcaster Profile
+          </PurpleButton>
+          
+          <PurpleButton
+            onClick={() => sdk.actions.openUrl("https://github.com/bianc8")}
+          >
+            GitHub
+          </PurpleButton>
+          
+          <PurpleButton
+            onClick={() => sdk.actions.openUrl("https://farville.xyz")}
+          >
+            Farville Farm
+          </PurpleButton>
+          
+          <PurpleButton
+            onClick={() => sdk.actions.openUrl("https://farcasterroyale.xyz")}
+          >
+            Farcaster Royale
+          </PurpleButton>
+        </div>
       </div>
     </div>
   );
